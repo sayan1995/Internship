@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>droplr</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js">
+	</script>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/profile.css" rel="stylesheet">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+	<script src="../js/profile.js">
+	</script>
+	<style>
+	</style>
+</head>
+<body onload="registerDomEvents()">
+	<header class="col-md-12">
+		<h1>Customer Profile</h1>
+	</header>
+	<div class="row top">
+		<div class="col-md-4 col-xs-9 searchCntr">
+			<label>Enter Customer Detail to Search:</label><br>
+			<input class="searchText form-control" placeholder="Enter Customer Detail.." type="text">
+		</div>
+		<div class="col-md-4 col-xs-3 searchRow">
+			<button class="searchBtn">Search</button>
+		</div>
+	</div><br>
+	<div class="tabsCntr row">
+		<div class="col-md-2 col-sm-3 col-xs-6 tab1 tabs">
+			Search Results
+		</div>
+		<div class="col-md-2 col-sm-3 col-xs-6 tab2 tabs">
+			Graph by Income
+		</div>
+	</div>
+	<div class="col-md-12 tableCntr">
+		<table class="infoTable" style="width:100%"></table>
+	</div>
+	<div class="graphs"></div>
+</body>
+</html>
